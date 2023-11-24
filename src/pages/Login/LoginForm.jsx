@@ -22,6 +22,8 @@ const LoginForm = () => {
     useEffect(() => {
     
         if (token) {
+
+            console.log("PORQUE ANDAS AQUI?");
             if(user){
                 
                 if(user.permitList.some(permit => permit === 'Admin')){
@@ -90,6 +92,8 @@ const LoginForm = () => {
     
         setIdentifier("");
         setPassword("");
+
+        navigate('/home')
 
     }
 

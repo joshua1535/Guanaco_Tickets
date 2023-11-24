@@ -20,30 +20,30 @@ const profileMenuItems = [
   {
       permit: 'Client',
       items: [
-          { label: "Mis tickets", url: "/mytickets"},
-          { label: "Historial de eventos", url: "/historyevents"},
-          { label: "Mis ordenes", url: "/myorders"},
-          { label: "Eventos", url: "/events"}
+          { label: "Mis tickets", url: `/mytickets`},
+          { label: "Historial de eventos", url: `/historyevents`},
+          { label: "Mis ordenes", url: `/myorders`},
+          { label: "Eventos", url: `/events`}
       ]
   },
   {
       permit: 'Event Administrator',
       items: [
-          { label: "Administrar eventos", url: "/admin-event"},
-          { label: "Crear evento", url: "/admin-event/createevent"}
+          { label: "Administrar eventos", url: `/admin-event`},
+          { label: "Crear evento", url: `/admin-event/createevent`}
       ]
   },
   {
     permit: 'Admin',
     items: [
-        { label: "Administrar usuarios", url: "/admin-users"}
+        { label: "Administrar usuarios", url: `/admin-users`}
     ]
   },
   {
     permit: 'Stadistics',
     items: [
-        { label: "Gestionar eventos", url: "/admin-graphs"},
-        { label: "Validar QR", url: "/admin-scanner"}
+        { label: "Gestionar eventos", url: `/admin-graphs`},
+        { label: "Validar QR", url: `/admin-scanner`}
     ]
   } 
 ];
@@ -82,7 +82,7 @@ export const ProfileMenu = () => {
 
   const handleMenu = (url) => {
       closeMenu();
-      navigate(url);
+      navigate(url, { replace: true });
     };
     
     return (

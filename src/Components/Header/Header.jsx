@@ -29,10 +29,10 @@ function NavListMenu() {
   // nav list component
 const navListItems = [
     {
-      label: "Eventos", url: "/events"
+      label: "Eventos", url: `/events`
     },
     {
-      label: "Mis tickets", url: "/mytickets"
+      label: "Mis tickets", url: `/mytickets`
     },
   ];
   
