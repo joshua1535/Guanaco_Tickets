@@ -1,0 +1,39 @@
+.generalContainer{
+}
+
+.headerContainer{
+    @apply sticky top-0 z-10 bg-white overflow-hidden max-h-full
+}
+
+.headerTypography{
+    @apply relative mx-auto flex items-center text-white
+}
+
+.bodyContainer {
+    @apply grid grid-cols-1 gap-4 font-text my-4 mx-56 
+    PC-1920*1080:mx-56
+    PC-1600*900:mx-52
+    PC-1366*768:mx-48
+    PC-1280*720:mx-36
+    PC-800*600:mx-20
+    PC-640*480:mx-0
+    Mobile-390*844:mx-0
+    Mobile-280:mx-0
+    
+}	
+
+
+.title {
+    font-family: 'PoppinsLight';
+    @apply font-bold text-center text-white
+
+    PC-1920*1080:text-3xl PC-1920*1080:mt-2
+    PC-1600*900:text-5xl PC-1600*900:mt-14
+    PC-1366*768:text-4xl PC-1366*768:mt-14
+    PC-1280*720:text-3xl PC-1280*720:mt-14
+    PC-800*600:text-2xl PC-800*600:mt-14
+    PC-640*480:text-2xl PC-640*480:mt-12
+    Mobile-390*844:text-2xl Mobile-390*844:mt-4
+    Mobile-280:text-xl
+}
+
