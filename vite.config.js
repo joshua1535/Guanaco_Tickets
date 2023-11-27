@@ -4,7 +4,6 @@ import { resolve } from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base:'https://joshua1535.github.io/Guanaco_Tickets/',
   plugins: [react()],
   css: {
     preprocessorOptions: {

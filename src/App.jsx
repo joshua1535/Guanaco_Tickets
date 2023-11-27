@@ -34,7 +34,7 @@ import ReceiveTicket from './pages/Receive Ticket/ReceiveTicket';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename= '/Guanaco_Tickets/'>
         <Routes>
           <Route path="/" element={<LoginForm />} />
           <Route path="/register" element={<RegisterForm />} />
